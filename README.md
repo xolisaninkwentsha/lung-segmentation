@@ -1,9 +1,6 @@
 # Lung Segmentation (2D)
 Repository features [UNet](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) inspired architecture used for segmenting lungs on chest X-Ray images.
 
-## Demo
-See the application of the model in [Demo](https://github.com/imlab-uiip/lung-segmentation-2d/tree/master/Demo) folder.
-
 ## Implementation
 Implemented in Keras(2.0.4) with TensorFlow(1.1.0) as backend. 
 
