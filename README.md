@@ -1,4 +1,4 @@
-# Lung Segmentation (2D)
+# Lung Segmentation
 Repository features [UNet](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) inspired architecture used for segmenting lungs on chest X-Ray images.
 
 ## Implementation
@@ -8,7 +8,7 @@ Use of data augmentation for training required slight changes to keras ImageData
 
 To use this implementation one needs to load and preprocess data (see `load_data.py`), train new model if needed (`train_model.py`) and use the model for generating lung masks (`inference.py`).
 
-`trained_model.hdf5` contains model trained on both data sets mentioned below.
+`trained_model.hdf5` contains model trained on both data sets mentioned below with 256 x 256 image size.
 
 ## Segmentation
 Scores achieved on [Montgomery](https://openi.nlm.nih.gov/faq.php#faq-tb-coll) and [JSRT](http://db.jsrt.or.jp/eng.php)(With [these masks](http://www.isi.uu.nl/Research/Databases/SCR/). See `preprocess_JSRT.py`.) (Measured using 5-fold cross-validation):
